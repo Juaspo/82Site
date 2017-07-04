@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+body, html {height: 100%; margin: 0;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:1;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.w3-half {border-style: solid; border-width: 0px;}
+
+.shots1{font-size:12px; opacity:0.7;}
+.shots2{font-size:12px; color:red; opacity:1}
+
+
+div.leftLayout{float:left; width:66% margin: 0 0 0 0; border: 0px solid red;}
+div.rightLayout{border: 1px solid blue;}
+div.clearFlt{clear:both}
+.board {border-style: solid; border-width: 0px;}
+
+.tsettings{text-align:left; margin-top:0px border-spacing:1px; width:300px}
+
+divClear{
+    clear: both;
+}
+
+.quarter{border-style: solid; border-width: 0px; border-color: blue;}
+
+.div1 {
+    float: left;
+    width: 50%;
+	//border: 1px solid red;
+    margin: 10px;
+}
+
+.div2 {
+    //border: 1px solid green;
+	width: 100%;
+    height: 300px;
+	margin: 0 0 10px 0;
+}
+
+.centerBox {
+  height: 300px;
+  align-items: center;
+  /* align vertical */
+  font-style: oblique;
+  border-style: solid;
+  border-color: red;
+  border-width: 0px;
+  }
+  .one {
+    border-style: solid;
+    border-width: 0px;
+}
+
+.hero-image {
+  background-image: url("./site_pics/sky.jpg");
+  height: 30%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+</style>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 class="w3-jumbo"><b>82a Baren Sommar-X</b></h1>
+  </div>
+</div>
+
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidenav"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>82a Baren</b></h3>
+  </div>
+  <a href="#" onclick="w3_close()" class="w3-padding w3-hover-white">Home</a> 
+  <a href="#milk" onclick="w3_close()" class="w3-padding w3-hover-white">Milk drinks</a> 
+  <a href="#soda" onclick="w3_close()" class="w3-padding w3-hover-white">Soda drinks</a> 
+  <a href="#juice" onclick="w3_close()" class="w3-padding w3-hover-white">Juice drinks</a> 
+  <a href="#shots" onclick="w3_close()" class="w3-padding w3-hover-white">Shots</a>
+  <a href="#misc" onclick="w3_close()" class="w3-padding w3-hover-white">The rest</a>
+</nav>
+
+<script id=prices>
+var drink1 = 25;
+var drink2 = 35;
+var shots1 = 20;
+var shots2 = 15;
+var beer = 15;
+var cider = 15;
+var whiskey = 10;
+var wine = 20;
+</script>
+
+
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-green w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+  <span>82a Baren</span>
+</header>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<!-- Header -->
+ <!-- 
+  <div class="w3-container" style="margin-top:80px">
+    <h1 class="w3-jumbo"><b>82a Baren Drinklist</b></h1>
+  </div>
+  -->
+  
+  
+  
+  <!-- Milk -->
+  <div class="w3-container" style="margin-top:80px" id="milk">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Milk based drinks</b></h1>
+	<p>Milk based drinks! Think milkshakes or chocolate drinks with alcohol, perfect if you don't want the fizzyness from sodas or the sourness of juice based drinks. We usualy use organic milk and often have lactose free milk too for the lactose intolerant people.</p>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+	
+	<div class="quarter">
+	<div class="div1">Pistage<img src="./pics/pistage.jpg" alt="Image not found" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+	<div class="div2"> <table class="centerBox"> <td>Vodka<br>Pisang Ambon <br>Amaretto <br>Milk</td></table></div>
+	</div>
+	<div class="quarter">
+	<div class="div1">White Russian<img src="./pics/white_russian.jpg" alt="Image not found" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+	<div class="div2"> <table class="centerBox"> <td>Vodka <br>Coffee Liqueur <br>Milk</td></table></div>
+	</div>
+	
+	</div>
+
+    <div class="w3-half">
+		<div class="quarter">
+			<div class="div1">
+			Pink Panther<img src="./pics/pink_panther.jpg" border="2px" alt="Image not found" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka<br>Licor 43 <br>Grenadine <br>Milk</td></table></div>
+		</div>
+		<div class="quarter">
+			<div class="div1">
+			Banana Split<img src="./pics/banana_split.jpg" alt="Image not found" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Banana Liqueur <br>Cacao <br>Milk</td></table></div>
+		</div>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Soda drinks -->
+  <div class="w3-container" id="soda" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Soda based drinks</b></h1>
+	<p>Coke, Sprite, Fanta and Tonic if you're brave. Here is the section for all your fizzy fuzz sparkling needs</p>
+	<hr style="width:50px;border:5px solid green" class="w3-round">
+  </div>
+  
+
+  <div class="w3-half">
+		<div class="quarter">
+			<div class="div1">
+			Gin Tonic<img src="./pics/gt.jpg" alt="Gin Tonic" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Gin<br>Tonic </td></table></div>
+		</div>
+		<div class="quarter">
+			<div class="div1">
+			Cuba Libre<img src="./pics/rum_coke.jpg" alt="Cuba Libre" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Rum <br>Coke </td></table></div>
+		</div>
+		<div class="quarter">
+			<div class="div1">
+			Snowball<img src="./pics/snowball.jpg" alt="snowball" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Advocaat <br>Sprite </td></table></div>
+		</div>
+		<div class="quarter">
+			<div class="div1">
+			Blue Lagoon<img src="./pics/blue_lagoon.jpg" alt="Blue Lagoon" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Blue Curacao <br>Sprite </td></table></div>
+		</div>
+		<div class="quarter">
+			<div class="div1">
+			Dry martini <img src="./pics/martini.jpg" alt="Dry Martini" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Gin<br>Martini </td></table></div>
+		</div>
+    </div>
+	<div class="w3-half" "one">
+		<div class="quarter">
+			<div class="div1">Vodka Energy
+			<img src="./pics/vodka_energy.jpg" alt="Vodka Energy" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka<br>Energy Drink </td></table></div>
+		</div>
+		<div class="quarter">
+			<div class="div1">Gin Fizz<img src="./pics/gin_fizz.jpg" style="width:100%" onclick="onClick(this)" alt="Gin Fizz"></div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Lemon Juice <br>Soda </td></table></div>
+		</div>
+		<div class="quarter">
+			<div class="div1">P2<img src="./pics/p2.jpg" style="width:100%" onclick="onClick(this)" alt="P2"></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Sourz <br>Sprite </td></table></div>
+		</div>
+		<div class="quarter">
+			<div class="div1">Adios Motherfucker<img src="./pics/no_pic.jpg" style="width:100%" onclick="onClick(this)" alt="Adios Motherfucker"></div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Vodka <br>Rum <br>Tequila <br>Blue Curacao <br>Sprite </td></table></div>
+		</div>
+    </div>
+  
+
+  
+  <!-- Juice drinks -->
+  <div class="w3-container" id="juice" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Juice based drinks</b></h1>
+    <p>Fresh fruit</p>
+	<hr style="width:50px;border:5px solid green" class="w3-round">
+  </div>
+
+  <!-- Juice list -->
+  <div class="w3-half">
+		<div>
+			<div class="div1">
+			Kir Royale<img src="./pics/kir_royal.jpg" alt="Kir Royal" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>White Wine <br>Creme de cassis  </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Bay Breeze<img src="./pics/bay_breeze.png" alt="Bay Breeze" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Cranberry Juice <br>Pineapple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Indian Summer<img src="./pics/indian_summer.jpg" alt="Indian Summer" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Coffee Liqueur <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">Melon Delight<img src="./pics/melon_delight.jpg" style="width:100%" onclick="onClick(this)" alt="MElon Delight"></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Melon Liqueur <br>Orange Juice </td></table></div>
+		</div>
+		
+    </div>
+	<div class="w3-half">
+		<div>
+			<div class="div1">
+			Pearl Harbor<img src="./pics/pearl_harbor.jpg" alt="Pearl Harbor" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Midori <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Wild Wendy<img src="./pics/wild_wendy.jpg" alt="Wild Wendy" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Malibu <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Cranberry Almond Kicker<img src="./pics/cran_almon_kick.jpg" alt="Cranberry Almond Kicker" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Amaretto <br>Cranberry Juice <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Blue Lady<img src="./pics/blue_lady.jpg" alt="Blue Lady" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Lemonade <br>Blue Curacao </td></table></div>
+		</div>
+		
+    </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="shots" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Shots!</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Plain Shots</li>
+        <li class="w3-padding-10">Vodka  </li>
+        <li class="w3-padding-10">Tequila</li>
+        <li class="w3-padding-10">Jägermeister</li>
+        <li class="w3-padding-10">Bailys</li>
+        <li class="w3-padding-10">Fireball</li>
+		<li class="w3-padding-10">Minttu</li>
+        <li class="w3-padding-10">Campari</li>
+        <li class="w3-padding-10">Fiske Fjaes</li>
+        <li class="w3-padding-10">Små Sure <br><p class="shots1">Flavours: Pinapple, Strawberry, Energy, Cola, Melon </p></li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-green w3-xlarge w3-padding-32">Mixed Shots</li>
+        <li class="w3-padding-10">Mr Nik <br><p class="shots1">Amaretto, Rum</p></li>
+        <li class="w3-padding-10">Scrambled Egg<br><p class="shots1">Advocaat, Rum</p></li>
+        <li class="w3-padding-10">Black N Blue<p class="shots1">Vodka, Blue Curacao</p></li>
+        <li class="w3-padding-10">Squashed Frog<p class="shots1">Advocaat, Midori, Bailys</p></li>
+        <li class="w3-padding-10">Mint Kick<p class="shots1">Pfeffermint, Vodka</p></li>
+		<li class="w3-padding-10">Shot the Sheriff<p class="shots1">Granadine, Orange juice, Midori(Rum)</p></li>
+      </ul>
+    </div>
+	
+	<div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Chest hair</li>
+        <li class="w3-padding-10">Stroh Rum <br><p class="shots2">80% Rum</p></li>
+        <li class="w3-padding-10">Valge Vodka<br><p class="shots2">80% Vodka</p></li>
+		<li class="w3-padding-10">Slattskalle<br><p class="shots2">unknown</p></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- The rest -->
+  <div class="w3-container" id="misc" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-green"><b>Beer, Cider, Wine and Whiskey</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p>Beer is not the answer, YES! is the answer. Beer is the question.</p>
+  </div>
+  <div class="w3-half">
+  <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Appertiff</li>
+        <li class="w3-padding-10">Bailys  </li>
+        <li class="w3-padding-10">Dooleys</li>
+        <li class="w3-padding-10">Lemoncello</li>
+        <li class="w3-padding-10">Martini <br><p class="shots1">Rosato, Extra Dry, Bianco </p></li>
+      </ul>
+  </div>
+  <div class="w3-half">
+  <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-green w3-xlarge w3-padding-32">Beer, Wine, Whiskey</li>
+        <li class="w3-padding-10">Beer <br><p class="shots1">Spendrups </p></li>
+        <li class="w3-padding-10">Cider <br><p class="shots1">Some fruity flavour </p></li>
+		<li class="w3-padding-10">Wine <br><p class="shots1">White, Red </p></li>
+        <li class="w3-padding-10">Whiskey<br><p class="shots1">Fancy</p></li>
+        <li class="w3-padding-10">Martini <br><p class="shots1">Rosato, Extra Dry, Bianco </p></li>
+      </ul>
+  </div>
+  <div class="w3-half">
+  <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Going Soft</li>
+        <li class="w3-padding-10">Beer (Non-alk)<br><p class="shots1">Åbro </p></li>
+        <li class="w3-padding-10">Sprite <br><p class="shots1">Lemon Lime </p></li>
+        <li class="w3-padding-10">Coke<br><p class="shots1">Pepsi</p></li>
+        <li class="w3-padding-10">Energy Drink <br><p class="shots1">Powerking</p></li>
+		<li class="w3-padding-10">Tonic<br><p class="shots1">Indian, Grape</p></li>
+      </ul>
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

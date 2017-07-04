@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<title>82a Bar Sytes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+body, html {height: 100%; margin: 0;}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:1;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.w3-half {border-style: solid; border-width: 0px;}
+
+.w3-jumbo {font-family:Comic Sans MS;}
+
+.shots1{font-size:12px; opacity:0.7;}
+.shots2{font-size:12px; color:red; opacity:1}
+
+
+div.leftLayout{float:left; width:66% margin: 0 0 0 0; border: 0px solid red;}
+div.rightLayout{border: 1px solid blue;}
+div.clearFlt{clear:both}
+.board {border-style: solid; border-width: 0px;}
+
+.tsettings{text-align:left; margin-top:0px border-spacing:1px; width:300px}
+
+divClear{
+    clear: both;
+}
+
+.quarter{border-style: solid; border-width: 0px; border-color: blue;}
+
+.div1 {
+    float: left;
+    width: 150px;
+	//border: 1px solid red;
+    margin: 10px;
+}
+
+.div2 {
+    //border: 1px solid green;
+	width: 100%;
+    height: 300px;
+	margin: 0 0 10px 0;
+}
+
+.centerBox {
+  height: 300px;
+  align-items: center;
+  /* align vertical */
+  font-style: oblique;
+  border-style: solid;
+  border-color: red;
+  border-width: 0px;
+  }
+  .one {
+    border-style: solid;
+    border-width: 0px;
+}
+
+.hero-image {
+  background-image: url("./site_pics/xpalms3.jpg");
+  height: 350px;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#33ff33;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.button {
+    background-color: #33ff33; /* Green */
+    border: none;
+    color: red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 8px;
+}
+.btn {
+width:350px;
+margin:auto;
+}
+
+	.drinktable {
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		width: 100%;
+		padding:5px;
+	}
+	.drinktable th {
+		background:#dddddd;
+		padding:5px;
+	}
+	.drinktable td {
+	}
+	tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+</style>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 class="w3-jumbo", style="text-align:left;" ><b>82a</b> <span style="float:right;"><b>Baren</b></span></h1>
+	<h1 class="w3-jumbo"><b>Sommar</b></h1>
+  </div>
+</div>
+
+
+<script id=prices>
+var drink1 = 25;
+var drink2 = 35;
+var shots1 = 20;
+var shots2 = 15;
+var beer = 15;
+var cider = 15;
+var whiskey = 10;
+var wine = 20;
+</script>
+
+<!-- Drinkar
+Hallonbåten - Ljus rom, Apelsin juice, Tonic, grenadine
+GTA - Gin Tonic Applejuice
+Wild wendy - Vodka, Malibu, Cranberry juice, Pinapple juce
+
+
+-->
+
+
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:60px;margin-right:60px;">
+
+<!-- Header -->
+ <!-- 
+  <div class="w3-container" style="margin-top:80px">
+    <h1 class="w3-jumbo"><b>82a Baren Drinklist</b></h1>
+  </div>
+  -->
+ <div class="btn">
+<a href="http://82bar.sytes.net/" class="button">Skriv meddelande på 82a Skylten</a>
+  </div>
+  
+  <!-- Juice drinks -->
+  <div class="w3-container" id="juice" style="margin-top:75px;margin-bottom:75px;">
+    <h1 class="w3-xxxlarge" style="text-align:center; color:#33ff33; text-shadow: 2px 2px #ff0000;"><b>Bartenderns tips på sommardryck</b></h1>
+	<hr style="width:100%; margin:auto; border:5px solid; color:#33ff33" class="w3-round">
+  </div>
+
+  <!-- Juice list -->
+  <div class="w3-half">
+		<div>
+			<div class="div1">
+			GT <img src="./pics/gt.png" alt="GT" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Tonic  </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Lennart <img src="./pics/lennart.jpg" alt="Lennart" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Xante <br>Syrup <br>Sprite <br>Lime  </td></table></div>
+		</div>
+		<div>
+			<div class="div1">Melon Delight<img src="./pics/melon_delight.jpg" style="width:100%" onclick="onClick(this)" alt="Melon Delight"></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Melon Liqueur <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Tropical Wendy<img src="./pics/tropical_wendy.jpg" alt="Tropical Wendy" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Rum <br>Malibu <br>Pineapple Juice <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Bay Breeze<img src="./pics/bay_breeze.png" alt="Bay Breeze" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Cranberry Juice <br>Pineapple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Indian Summer<img src="./pics/indian_summer.png" alt="Indian Summer" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Coffee Liqueur <br>Orange Juice </td></table></div>
+		</div>
+		
+		<div>
+			<div class="div1">Pistage<img src="./pics/pistage.jpg" style="width:100%" onclick="onClick(this)" alt="Pistage"></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Pisang Ambon <br>Amaretto <br>Milk </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Blue Lagoon <img src="./pics/blue_lagoon.jpg" alt="GT" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Blue Curacao <br>Sprite  </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Covfefe <img src="./pics/covfefe.jpg" alt="GT" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Bad politics <br> Narrow mindedness <br> A dash of racism <br> Topped with Greed <br> And a slice of fake news </td></table></div>
+		</div>
+		
+    </div>
+	<div class="w3-half">
+	<div>
+			<div class="div1">
+			GTA <img src="./pics/gta.png" alt="GTA" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Tonic <br>Apple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Sunken boat<img src="./pics/sunk_boat.jpeg" alt="sunken boat" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>White Rum <br>Tonic <br>Orange Juice <br> Grenadine</td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Pearl Harbor<img src="./pics/pearl_harbor.jpg" alt="Pearl Harbor" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Melon Liquer <br>Pineapple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Wild Wendy<img src="./pics/wild_wendy.jpg" alt="Wild Wendy" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Malibu <br>Orange Juice <br> Pineapple juice <br>Cranberry Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Cranberry Almond Kicker<img src="./pics/almond_kicker.png" alt="Cranberry Almond Kicker" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Amaretto <br>Cranberry Juice <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Broken Kryptonyte<img src="./pics/kryptonyte.jpg" alt="Broken Kryptonyte" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Pisang Ambon <br>Pineapple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">Stately Wil<img src="./pics/stately_wil.png" style="width:100%" onclick="onClick(this)" alt="Stately Wil"></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Pisang Ambon<br>Milk </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Blue Lady<img src="./pics/blue_lady.jpg" alt="Blue Lady" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Lemonade <br>Blue Curacao </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Tequila Sunrise <img src="./pics/tequila_sunrise.png" alt="Tequila Sunrise" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Tequila <br> Orange Juice<br> Grenadine</td></table></div>
+		</div>
+    </div>
+
+<div style="width:80%;margin:auto;";>
+	<table class="drinktable">
+	<thead>
+	<tr>
+		<th>Dryck</th>
+		<th>Beskrivning</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>&nbsp;Amaretto</td>
+		<td>Söt och kraftig mandellikör</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Blue Curacao</td>
+		<td>Blå citrusbaserad likör</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Grenadine</td>
+		<td>Söt koncentrat gjord på Granatäpple</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Malibu</td>
+		<td>Rom och kokosnötslikör, söt och tropisk</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Pisang Ambon</td>
+		<td>Söt bananlikör</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Syrup</td>
+		<td>Sockerlag</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Xante</td>
+		<td>Söt och frisk päronkonjak</td>
+	</tr>
+	<tbody>
+</table>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
