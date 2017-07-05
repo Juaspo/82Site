@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Mario Party Party!!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
@@ -33,7 +33,7 @@ divClear{
 
 .div1 {
     float: left;
-    width: 50%;
+    width: 150px;
 	//border: 1px solid red;
     margin: 10px;
 }
@@ -60,8 +60,8 @@ divClear{
 }
 
 .hero-image {
-  background-image: url("./site_pics/marioparty.jpg");
-  height: 30%;
+  background-image: url("./site_pics/marioparty2.png");
+  height: 50%;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -75,6 +75,22 @@ divClear{
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
+}
+
+.drinktable {
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		width: 100%;
+		padding:5px;
+	}
+	.drinktable th {
+		background:#dddddd;
+		padding:5px;
+	}
+	.drinktable td {
+	}
+	tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 </style>
@@ -97,6 +113,7 @@ divClear{
   <a href="#juice" onclick="w3_close()" class="w3-padding w3-hover-white">Juice drinks</a> 
   <a href="#shots" onclick="w3_close()" class="w3-padding w3-hover-white">Shots</a>
   <a href="#misc" onclick="w3_close()" class="w3-padding w3-hover-white">The rest</a>
+  <a href="http://82bar.sytes.net/" onclick="w3_close()" class="w3-padding w3-hover-white">82a skylten</a>
 </nav>
 
 <script id=prices>
@@ -127,11 +144,153 @@ var wine = 20;
 
 <!-- Header -->
 <div class="w3-container" style="margin-top:0px">
-    <h1 class="w3-jumbo" style="text-align:center";><b>82a Mario Party Party2</b></h1>
+    <h1 class="w3-jumbo" style="text-align:center";><b>Mario Party Party2 @ 82a</b></h1>
 </div>
   
-
   
+  <!-- Juice list -->
+  <div class="w3-half">
+		<div>
+			<div class="div1">
+			GT <img src="./pics/gt.png" alt="GT" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Tonic  </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Lennart <img src="./pics/lennart.jpg" alt="Lennart" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Xante <br>Syrup <br>Sprite <br>Lime  </td></table></div>
+		</div>
+		<div>
+			<div class="div1">Melon Delight<img src="./pics/melon_delight.jpg" style="width:100%" onclick="onClick(this)" alt="Melon Delight"></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Melon Liqueur <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Tropical Wendy<img src="./pics/tropical_wendy.jpg" alt="Tropical Wendy" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Rum <br>Malibu <br>Pineapple Juice <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Bay Breeze<img src="./pics/bay_breeze.png" alt="Bay Breeze" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Cranberry Juice <br>Pineapple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Indian Summer<img src="./pics/indian_summer.png" alt="Indian Summer" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Coffee Liqueur <br>Orange Juice </td></table></div>
+		</div>
+		
+		<div>
+			<div class="div1">Pistage<img src="./pics/pistage.jpg" style="width:100%" onclick="onClick(this)" alt="Pistage"></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Pisang Ambon <br>Amaretto <br>Milk </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Blue Lagoon <img src="./pics/blue_lagoon.jpg" alt="GT" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Blue Curacao <br>Sprite  </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Covfefe <img src="./pics/covfefe.jpg" alt="GT" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Bad politics <br> Narrow mindedness <br> A dash of racism <br> Topped with Greed <br> And a slice of fake news </td></table></div>
+		</div>
+		
+    </div>
+	<div class="w3-half">
+	<div>
+			<div class="div1">
+			GTA <img src="./pics/gta.png" alt="GTA" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Tonic <br>Apple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Sunken boat<img src="./pics/sunk_boat.jpeg" alt="sunken boat" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>White Rum <br>Tonic <br>Orange Juice <br> Grenadine</td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Pearl Harbor<img src="./pics/pearl_harbor.jpg" alt="Pearl Harbor" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Melon Liquer <br>Pineapple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Wild Wendy<img src="./pics/wild_wendy.jpg" alt="Wild Wendy" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Malibu <br>Orange Juice <br> Pineapple juice <br>Cranberry Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Cranberry Almond Kicker<img src="./pics/almond_kicker.png" alt="Cranberry Almond Kicker" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Amaretto <br>Cranberry Juice <br>Orange Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Broken Kryptonyte<img src="./pics/kryptonyte.jpg" alt="Broken Kryptonyte" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Pisang Ambon <br>Pineapple Juice </td></table></div>
+		</div>
+		<div>
+			<div class="div1">Stately Wil<img src="./pics/stately_wil.png" style="width:100%" onclick="onClick(this)" alt="Stately Wil"></div>
+			<div class="div2"> <table class="centerBox"> <td>Vodka <br>Pisang Ambon<br>Milk </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Blue Lady<img src="./pics/blue_lady.jpg" alt="Blue Lady" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" />
+			</div>
+			<div class="div2"> <table class="centerBox"> <td>Gin <br>Lemonade <br>Blue Curacao </td></table></div>
+		</div>
+		<div>
+			<div class="div1">
+			Tequila Sunrise <img src="./pics/tequila_sunrise.png" alt="Tequila Sunrise" style="width:100%" onclick="onClick(this)" onerror="this.onerror=null; this.src='./pics/no_pic.jpg';" /></div>
+			<div class="div2"> <table class="centerBox"> <td>Tequila <br> Orange Juice<br> Grenadine</td></table></div>
+		</div>
+    </div>
+
+<div style="width:80%;margin:auto;";>
+	<table class="drinktable">
+	<thead>
+	<tr>
+		<th>Dryck</th>
+		<th>Beskrivning</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>&nbsp;Amaretto</td>
+		<td>Söt och kraftig mandellikör</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Blue Curacao</td>
+		<td>Blå citrusbaserad likör</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Grenadine</td>
+		<td>Söt koncentrat gjord på Granatäpple</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Malibu</td>
+		<td>Rom och kokosnötslikör, söt och tropisk</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Pisang Ambon</td>
+		<td>Söt bananlikör</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Syrup</td>
+		<td>Sockerlag</td>
+	</tr>
+	<tr>
+		<td>&nbsp;Xante</td>
+		<td>Söt och frisk päronkonjak</td>
+	</tr>
+	<tbody>
+</table>
+</div>
   
   
   <!-- Milk -->
